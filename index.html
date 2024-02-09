@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicon Delta | Sign Up</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav-bar">
+            <h2>Silicon Delta</h2>
+
+
+            <div class="register">
+                <a href="./index.html"><button>Register</button></a>
+                <a href="./login.html"><button>Login</button></a>
+              
+                
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="account">
+                    
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                    
+                    
+                </div>
+
+                <div class="write">
+                    <h5>Welcome to Silicon Delta, please fill in the registration form</h3>
+                </div>
+                <div class="full-name">
+                    <div class="name">
+                        <label for="Name">First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="name">
+                        <label for="Name">Last Name</label>
+                        <input type="text">
+                    </div>
+
+
+                </div>
+                <div class="email">
+                    <label for="email">email</label>
+                    <input type="email">
+                </div>
+
+
+                <div class="new-password">
+                    <div class="password">
+                        <label for="password"> Create New Password</label>
+                        <input type="text">
+                    </div>
+                    <div class="password">
+                        <label for="password">Confirm Password</label>
+                        <input type="text">
+                    </div>
+
+
+                </div>
+
+                
+
+
+                <div class="courses">
+                    <label for="courses">Courses</label>
+                    <select id="courses" name="courses">
+                        <option value="stack">Choose a Stack</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="bacnkend">Backend</option>
+                        <option value="product-design">Product design</option>
+                        <option value="graphics">Graphics design</option>
+                    </select>
+
+                </div>
+                
+                <div class="duration">
+                    <label for="duration">Course duration</label>
+                    <select id="duration" name="duration">
+                        <option value="months">How many months</option>
+                        <option value="frontend">2 months</option>
+                        <option value="bacnkend">4 months</option>
+                        <option value="product-design">6 months</option>
+                        <option value="graphics">1 year</option>
+                    </select>
+
+                </div>
+
+                <button class="upload-button" onclick="document.getElementById('fileInput').click()">Upload Image</button>
+                <input type="file" id="fileInput" style="display: none;" accept="image/*">
+
+
+                <button id="submit">Submit</button>
+
+                <p class="login">Already have an account<a href="./login.html"> Login</a></p>
+
+            </form>
+
+
+            <div class="background">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+
+function handleFileSelect(event) {
+    const file = event.target.files[0];
+    if (file) {
+        // Handle the file, e.g., upload it to a server or display it
+        console.log('Selected file:', file);
+    }
+}
+    </script>
+    
+</body>
+</html>
